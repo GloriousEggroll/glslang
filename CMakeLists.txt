@@ -259,7 +259,8 @@ add_custom_command(
     DEPENDS ${GLSLANG_BUILD_INFO_PY}
             ${GLSLANG_CHANGES_FILE}
             ${GLSLANG_BUILD_INFO_H_TMPL}
-    COMMENT "Generating ${GLSLANG_BUILD_INFO_H}")
+    COMMENT "Generating ${GLSLANG_BUILD_INFO_H}"
+    VERBATIM)
 
 # Target to build the build_info.h file
 add_custom_target(glslang-build-info DEPENDS ${GLSLANG_BUILD_INFO_H})
